@@ -47,17 +47,17 @@
   }
 }
 
-@media (max-width:400px) {
+@media (max-width: 399px) {
   .footer-container {
     grid-template-columns: 1fr;
     gap: 40px;
   }
   .footer-contato li {
-    font-size: 1.1rem;
+    font-size: .7rem;
   }
   .footer-texto {
-    max-width: 350px;
-    font-size: 1.5rem;
+    max-width: 300px;
+    font-size: 0.6rem;
     line-height: 1.33;
     color: #cccccc;
   }
