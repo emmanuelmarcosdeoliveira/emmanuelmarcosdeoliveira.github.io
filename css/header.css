@@ -49,3 +49,14 @@
     border-radius: 4px;
   }
 }
+
+@media (max-width: 400px) {
+  .header-menu a {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .header-menu a:hover:after {
+    width: 0%;
+  }
+}
