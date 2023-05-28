@@ -1,8 +1,12 @@
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Fira Sans", Arial, Helvetica, sans-serif;
   color: #141414;
- 
 }
 
 h1,
@@ -32,7 +36,7 @@ img {
   max-width: 4ch;
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
   .subtitulo {
     font-size: 3rem;
     text-transform: capitalize;

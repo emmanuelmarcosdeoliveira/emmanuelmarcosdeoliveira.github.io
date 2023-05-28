@@ -20,11 +20,27 @@
   display: block;
   width: 130px;
   height: 100px;
-  background: url(../images/detalhe.svg) no-repeat center;
+  background: url(../img/detalhe.svg) no-repeat center;
   position: absolute;
-  left: -40px;
-  top: -15px;
+  left: -60px;
+  top: -25px;
   z-index: -1;
+}
+
+h1::after {
+  content: "|";
+  margin-left: 5px;
+  opacity: 1;
+  animation: pisca 0.7s infinite;
+}
+@keyframes pisca {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 .introducao p {
@@ -32,7 +48,7 @@
   color: #525252;
 }
 
- @media (max-width: 1000px) {
+@media (max-width: 1000px) {
   .introducao h1 {
     font-size: 3rem;
   }
@@ -52,7 +68,6 @@
     left: 0px;
   }
 }
-
 @media (max-width: 430px) {
   .introducao {
     display: flex;
@@ -60,9 +75,13 @@
     align-content: center;
     display: block;
   }
-  
+
   .introducao img {
     display: block;
     padding-bottom: 40px;
+  }
+  .introducao h1 {
+    margin-left: 10px;
+    font-size: 1.8rem;
   }
 }
