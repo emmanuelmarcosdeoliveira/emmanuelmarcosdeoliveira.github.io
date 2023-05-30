@@ -51,7 +51,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .header-menu a {
     font-size: 1rem;
     padding: 10px 20px;

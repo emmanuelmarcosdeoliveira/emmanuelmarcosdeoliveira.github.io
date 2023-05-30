@@ -62,7 +62,7 @@ button:hover {
   border: 1px solid rgba(0, 0, 0, 0.3);
   box-sizing: border-box;
   background-color: #e0e0e0;
-  
+
   color: #000000;
 }
 
@@ -92,7 +92,7 @@ button:hover {
     left: 0px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 550px) {
   .introducao {
     padding: 20px;
     display: flex;
