@@ -49,13 +49,13 @@
   font-size: 1.125rem;
   line-height: 1.1;
   font-weight: bold;
- }
- .empresa-titulo-cargo {
+}
+.empresa-titulo-cargo {
   font-size: 1.125rem;
   line-height: 1.1;
   font-weight: bold;
   text-align: center;
- }
+}
 
 .empresa-texto {
   font-size: 0.857rem;
@@ -78,7 +78,7 @@
   flex-direction: column;
   gap: 10px;
   text-align: center;
-  }
+}
 
 .empresa-habilidades li {
   font-size: 0.875rem;
@@ -89,36 +89,35 @@
 }
 .empresa-habilidades span {
   font-weight: 600;
-  font-size: .7rem;
+  font-size: 0.7rem;
   text-align: center;
-  }
+}
 
 /* Definindo a parte Responsiva do Site. */
-@media  (max-width: 800px){
-.experiencia{
-grid-template-columns: 1fr;
-gap: 40px;
-}
-.experiencia .subtitulo {
-  color: #141414;
-}
-.experiencia .texto {
-  font-size: 1.25rem;
-}
-.empresa-ano {
-  position: initial;
-  order: 1;
-  width: initial;
-  text-align: left;
-}
-.empresa-ano::before {
-  content: "Ano: ";
-}
+@media (max-width: 800px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .experiencia .subtitulo {
+    color: #141414;
+  }
+  .experiencia .texto {
+    font-size: 1.25rem;
+  }
+  .empresa-ano {
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+  .empresa-ano::before {
+    content: "Ano: ";
+  }
 }
 
-@media (max-width: 430px){
+@media (max-width: 430px) {
   .empresa {
     grid-template-columns: 1fr;
   }
- 
 }
