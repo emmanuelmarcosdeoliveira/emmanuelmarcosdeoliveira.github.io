@@ -92,7 +92,7 @@ button:hover {
     left: 0px;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 500px) {
   .introducao {
     padding: 20px;
     display: flex;
@@ -104,8 +104,10 @@ button:hover {
     padding: 20px;
   }
   .introducao img {
-    display: none;
-    padding-bottom: 40px;
+    border-radius: 50%;
+    width: 300px;
+    margin-left: 50px;
+    padding-bottom: 35px;
   }
   .introducao h1 {
     font-size: 2.5rem;
@@ -114,5 +116,8 @@ button:hover {
     margin-top: 5px;
     font-size: 0.8rem;
     padding: 9px 14px;
+  }
+  .introducao p {
+    padding-bottom: 10px;
   }
 }
