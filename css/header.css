@@ -56,6 +56,11 @@
     font-size: 1rem;
     padding: 10px 20px;
   }
+.header img {
+  max-width: 250px;
+}
+
+
 
   .header-menu a:hover:after {
     width: 0%;
