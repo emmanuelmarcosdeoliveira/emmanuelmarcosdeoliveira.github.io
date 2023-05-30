@@ -53,12 +53,11 @@
 .redes img {
   margin: 10px;
   padding: 10px;
-  border: 3px solid #8f8f8f;
+  background: linear-gradient(#1c2fda, #3cdae4);
 }
 
 .redes img a {
   padding: 50px;
-  color: #8f8f8f;
 }
 
 @media (max-width: 800px) {
