@@ -105,9 +105,10 @@ button:hover {
   }
   .introducao img {
     border-radius: 50%;
-    width: 300px;
+    width: 280px;
     margin-left: 40px;
     padding-bottom: 35px;
+   
   }
   .introducao h1 {
     font-size: 2.5rem;

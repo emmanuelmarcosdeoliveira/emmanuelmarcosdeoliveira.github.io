@@ -43,3 +43,9 @@ img {
     max-width: initial !important;
   }
 }
+@media (max-width: 786px) {
+  body,
+  html {
+    overflow-x: hidden !important;
+  }
+}
