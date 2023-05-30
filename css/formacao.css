@@ -115,7 +115,7 @@
   left: 100px;
   top: -45px;
 }
-.formacao-extra h2::before {
+/* .formacao-extra h2::before {
   display: block;
   content: "";
   width: 48px;
@@ -123,8 +123,8 @@
   position: absolute;
   left: 485px;
   top: 580px;
-}
-.idiomas h2::before {
+} */
+/* .idiomas h2::before {
   display: block;
   content: "";
   width: 48px;
@@ -132,23 +132,23 @@
   position: absolute;
   left: 485px;
   top: 1400px;
-}
+} */
 
 h2 {
   padding: 20px 0px;
 }
 
-.cursos h2::before {
+/* .cursos h2::before {
   background: url("../img/cursos.svg") no-repeat center center;
-}
+} */
 
 .cursos h3::before {
   background: url("../img/cursos.svg") no-repeat center center;
 }
 
-.idiomas h2::before {
+/* .idiomas h2::before {
   background: url("../img/idiomas.svg") no-repeat center center;
-}
+} */
 
 .formacao-extra li {
   width: 180px;
@@ -199,5 +199,5 @@ h2 {
     .faculdade {
       margin-left: 40px;
     }
-  
+     
   }
