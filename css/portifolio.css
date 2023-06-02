@@ -18,7 +18,8 @@
     margin-bottom: 20px;
     }
   .portifolio-tecnologias img {
-  width: 32px;
+  max-width: 42px;
+  padding: 05px;
   }
   .portifolio-descricao{
    display: flex;
@@ -36,7 +37,7 @@
    margin-left: 0px;
    }
    .portifolio-img img {
-   justify-content: flex-start;
+   
     padding:20px 20px 20px 0px;
    }
     
