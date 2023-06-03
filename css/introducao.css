@@ -15,7 +15,8 @@
   margin-bottom: 30px;
   position: relative;
   max-width: 12ch;
- }
+ 
+}
 
 .introducao h1::before {
   content: "";
