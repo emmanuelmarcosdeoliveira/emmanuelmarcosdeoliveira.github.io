@@ -11,283 +11,259 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
-
+  <script src="https://kit.fontawesome.com/2df9832f8b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="header">
-    <img src="img/logo-marca.jpg" alt="Logo Emmanuel OLiveira" width="375" height="38">
+    <img src="img/logo-marca.png" alt="Logo Emmanuel OLiveira" width="375" height="38">
     <nav>
-      <ul class="header-menu">
+      <ul class="header-menu" id="menu-oculto">
         <li><a href="#experiencia">Experiência</a></li>
         <li><a href="#formacao">Formação</a></li>
-        <li><a href="#portifolio">Portifólio</a></li>
+        <li><a href="#tecnologias">Tecnologias</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
   </header>
-
-  <main class="introducao">
-    <picture>
-      <source media="(max-width: 500px)" srcset="img/foto-perfil-mobile.png" type="image/png">
-      <img class="animate" src="img/Foto-perfil.png" alt="Minha Imagem de Perfil" width="475" height="598">
-    </picture>
-    <div>
-      <h1 id="titulo"> Desenvolvedor Front-End/UX-UI Designer</h1>
-
-      <p class="animate from-top">Localizado em São Paulo</p>
-      <a class="introducao-botao animate from-left" href="assets/curriculum/CV-Emmanuel_Oliveira.pdf"  download="CV-Emmanuel_Oliveira" type="application/pdf"><button type="button">Currículo</button> </a>
-     
-    </div>
-  </main>
-
-  <section class="experiencia" id="experiencia" aria-label="Experiência">
-    <h2 class="animate from-left subtitulo">Experiência</h2>
-    <div>
-      <p class=" animate from-right experiencia-texto">Olá tenho<strong> 44 anos</strong>,sou apaixonado por <strong>tecnologia</strong> e amante da Natureza. Profissional em <strong>transição de carreira.</strong> Atualmente fazendo o curso de<strong> Full Stack Python</strong> pela EBAC. Em processo de desenvolvimento buscando uma <strong>Oportunidade </strong>como <strong>Desenvolvedor Front-end Junior</strong>. </p>
-
-      <div class=" animate from-right empresa">
-        <span class="empresa-ano">2015-2022</span>
-        <h3 class="empresa-titulo"> Arcos Dourados - Mc Donald´s </h3>
-        <span class="empresa-titulo-cargo">Gerente de Négocios</span>
-        <p class="empresa-texto">
-          Profissional responsável por toda a gestão de um restaurante. Liderando e desenvolvendo Equipes, responsável direto por projetar acompanhar e analisar o P&L; desenvolvimento e treinamento de gerentes, controle de MDO, controle de Turnover e M&R. Elaborando escalas de trabalho; reuniões de funcionários e reuniões de planejamento. Estabelecendo metas e estratégias para alcançar o Resultado almejado pela Companhia.
-        </p>
-        <ul class="empresa-habilidades">
-          <span>Competências</span>
-          <li>Planejamento Estratégico</li>
-          <li>Contratação de pessoal</li>
-          <li>Liderança de Equipe</li>
-          <li>Foco no Resultado</li>
-        </ul>
-      </div>
-
-      <div class=" animate from-right empresa">
-        <span class="empresa-ano">2012-2014</span>
-        <h3 class="empresa-titulo"> Arcos Dourados - Mc Donad´s</h3>
-        <span class="empresa-titulo-cargo">Gerente Assitente</span>
-        <p class="empresa-texto">
-          Profissional responsável pela área de treinamento do Restaurante. Desenvolvendo pessoas para atuar nos segmentos do restaurante buscando contribuir com o desenvolvimento e motivação da equipe otimizando os resultados. Presta suporte ao Gerente de Negócios conduzindo pesquisas de satisfação, pedidos de Mercadorias, controle de inventário, análise financeira. Realizando ações junto ao Gerente de Negócios para minimizar os custos almejando alcançar os resultados pré-estabelecidos.
-        </p>
-        <ul class="empresa-habilidades">
-          <span>Competências</span>
-          <li>Treinamento de pessoas</li>
-          <li>Controle de Inventário</li>
-          <li>Controle Financeiro</li>
-          <li>Lider de Equipe</li>
-        </ul>
-      </div>
-
-      <div class=" animate from-right empresa">
-        <span class="empresa-ano">2007-2012</span>
-        <h3 class="empresa-titulo"> Arcos Dourados - Mc Donad´s</h3>
-        <span class="empresa-titulo-cargo">Gerente de turno</span>
-        <p class="empresa-texto">
-          Profissional Responsável por garantir o resultado do Restaurante durante o seu plantão. Através de planejamento de Vendas e Ticket Médio, pesquisas de satisfação do Cliente; também por acompanhar os treinamentos previamente estabelecidos da equipe e todo o atendimento ao cliente em todos os segmentos do Restaurante; controlando o inventário a qualidade e segurança alimentar. Orientando e corrigindo procedimentos durante o seu plantão.
-        </p>
-        <ul class="empresa-habilidades">
-          <span>Competências</span>
-          <li>Treinamento de pessoas</li>
-          <li>Controle Financeiro</li>
-          <li>Controle de Estoque</li>
-          <li>Pacote Office</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="formacao" id="formacao" aria-label="Formação">
-    <div class="formacao-container">
-      <h2 class="animate from-left  subtitulo">Formação</h2>
+  <div>
+    <main class="introducao">
+      <picture>
+        <source media="(max-width: 500px)" srcset="img/foto-perfil-mobile.png" type="image/png">
+        <img class="animate" src="img/Foto-perfil.png" alt="Minha Imagem de Perfil" width="475" height="598">
+      </picture>
       <div>
-        <p class=" animate from-right formacao-texto">
-          Minha recente formação foi um <strong>Tecnologo </strong>em <strong>Redes de Computadores</strong> na Faculdade <strong>UniSantanna </strong>onde me formei em julho de 2023. Atualmente estou voltado para a área Desenvolvimento Web Full Stack me desenvolvendo e especializando atráves da Escola <strong> EBAC</strong> e outras plataformas on-line.
-        </p>
-        <ul class=" animate faculdade-lista">
-          <li class="faculdade">
-            <span class="faculdade-tipo">Tecnologo</span>
-            <h3 class="faculdade-curso">Redes de Computadores</h3>
-            <p>Faculdade</p>
-            <span class="faculdade-instituicao">UniSantanna</span>
-          </li>
+        <h1 id="titulo"> Desenvolvedor Front-End/UX-UI Designer</h1>
 
-        </ul>
+        <p class="animate from-left">Localizado em São Paulo</p>
+        <a class="botao-cv" href="assets/curriculum/CV - Front-End-dk.pdf" download="CV-Emmanuel_Oliveira" type="application/pdf">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #ffffff;transform: ;msFilter:;">
+            <path d="m12 16 4-5h-3V4h-2v7H8z"></path>
+            <path d="M20 18H4v-7H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-2v7z"></path>
+          </svg>
+          Currículo</a>
 
-        <div class="animate formacao-extra">
-          <div class="cursos">
-            <h2>Cursos Intensivos</h2>
-            <!-- <ul>
-              <li>
-                <a class="animate" href="https://www.estudonauta.com/aluno/emmanuel-oliveira" target="_blank">Desenvolvimento Web-Módulo 1 de 5 <span>Estudonauta-40h</span></a>
-              </li>
-              <li>
-                <a class="animate" href="https://www.estudonauta.com/aluno/emmanuel-oliveira" target="_blank">Desenvolvimento Web-Módulo 2 de 5 <span>Estudonauta-40h</span></a>
-              </li>
-              <li>
-                <a class="animate" href="https://www.estudonauta.com/aluno/emmanuel-oliveira" target="_blank">Desenvolvimento Web-Módulo 3 de 5 <span>Estudonauta-40h</span></a>
-              </li>
-              <li>
-                <a class="animate" href="https://www.estudonauta.com/aluno/emmanuel-oliveira" target="_blank">Desenvolvimento Web-Módulo 4 de 5 <span>Estudonauta-40h</span> </a>
-              </li>
-              <li>
-                <a class="animate" href="https://www.estudonauta.com/aluno/emmanuel-oliveira" target="_blank">Linguagem JavaScript<span>Estudonauta-40h</span> </a>
-              </li>
+      </div>
+    </main>
 
-              <li>
-                <a class="animate" href="https://on.fiap.com.br/pluginfile.php/1/local_nanocourses/certificado_nanocourse/77218/a245878ec4978b9cd9af9f2e25d0b8b1/certificado.png " target="_blank">UX - User Experience<span>FIAP-40h</span></a>
-              </li>
-              <li>
-                <a class="animate" href="https://udemy-certificate.s3.amazonaws.com/image/UC-fd830d42-afbd-4609-94d3-51e1d4f82b46.jpg" target="_blank">Git e GitHub do Zero ao Avançado<span>Udemy-6h</span></a>
-              </li>
+    <section class="experiencia" id="experiencia" aria-label="Experiência">
+      <h2 class="animate from-left subtitulo">Experiência</h2>
+      <div>
+        <p class=" animate from-right experiencia-texto">Olá tenho<strong> 44 anos</strong>,sou apaixonado por <strong>tecnologia</strong> e amante da Natureza. Profissional em <strong>transição de carreira.</strong> Atualmente fazendo o curso de<strong> Full Stack Python</strong> pela EBAC. Em processo de desenvolvimento buscando uma <strong>Oportunidade </strong>como <strong>Desenvolvedor Front-end Junior</strong>. </p>
 
+        <div class=" animate from-right empresa">
+          <span class="empresa-ano">2015-2022</span>
+          <h3 class="empresa-titulo"> Arcos Dourados - Mc Donald´s </h3>
+          <span class="empresa-titulo-cargo">Gerente de Négocios</span>
+          <p class="empresa-texto">
+            Profissional responsável por toda a gestão de um restaurante. Liderando e desenvolvendo Equipes, responsável direto por projetar acompanhar e analisar o P&L; desenvolvimento e treinamento de gerentes, controle de MDO, controle de Turnover e M&R. Elaborando escalas de trabalho; reuniões de funcionários e reuniões de planejamento. Estabelecendo metas e estratégias para alcançar o Resultado almejado pela Companhia.
+          </p>
+          <ul class="empresa-habilidades">
+            <span>Competências</span>
+            <li>Planejamento Estratégico</li>
+            <li>Contratação de pessoal</li>
+            <li>Liderança de Equipe</li>
+            <li>Foco no Resultado</li>
+          </ul>
+        </div>
 
-            </ul> -->
-            <ul class=" animate faculdade-lista">
+        <div class=" animate from-right empresa">
+          <span class="empresa-ano">2012-2014</span>
+          <h3 class="empresa-titulo"> Arcos Dourados - Mc Donad´s</h3>
+          <span class="empresa-titulo-cargo">Gerente Assitente</span>
+          <p class="empresa-texto">
+            Profissional responsável pela área de treinamento do Restaurante. Desenvolvendo pessoas para atuar nos segmentos do restaurante buscando contribuir com o desenvolvimento e motivação da equipe otimizando os resultados. Presta suporte ao Gerente de Negócios conduzindo pesquisas de satisfação, pedidos de Mercadorias, controle de inventário, análise financeira. Realizando ações junto ao Gerente de Negócios para minimizar os custos almejando alcançar os resultados pré-estabelecidos.
+          </p>
+          <ul class="empresa-habilidades">
+            <span>Competências</span>
+            <li>Treinamento de pessoas</li>
+            <li>Controle de Inventário</li>
+            <li>Controle Financeiro</li>
+            <li>Lider de Equipe</li>
+          </ul>
+        </div>
 
-              <a href="assets/certificados curso em video/estudonauta-modulo-1.png" target="_blank">
-                <li class=" animate faculdade">
-                  <span class="faculdade-tipo">HTML5&CSS3</span>
-                  <h3 class="faculdade-curso">Modulo 1</h3>
-                  <span class="faculdade-instituicao">Estudonauta</span>
-                  <h5>Carga Hóraria: 40h</h5>
-                </li>
-              </a>
-              <a href="assets/certificados curso em video/estudonauta-modulo-2.png" target="_blank">
-                <li class="animate faculdade">
-                  <span class="faculdade-tipo">HTML5&CSS3</span>
-                  <h3 class="faculdade-curso">Modulo 2</h3>
-                  <span class="faculdade-instituicao">Estudonauta</span>
-                  <h5>Carga Hóraria: 40h </h5>
-                </li>
-              </a>
-              <a href="assets/certificados curso em video/estudonauta-modulo-3.png" target="_blank">
-                <li class="animate faculdade">
-                  <span class="faculdade-tipo">HTML5&CSS3</span>
-                  <h3 class="faculdade-curso">Modulo 3</h3>
-                  <span class="faculdade-instituicao">Estudonauta</span>
-                  <h5>Carga Hóraria: 40h </h5>
-                </li>
-              </a>
-              <a href="assets/certificados curso em video/estudonauta-modulo-4.png" target="_blank">
-                <li class="animate faculdade">
-                  <span class="faculdade-tipo">HTML5&CSS3</span>
-                  <h3 class="faculdade-curso">Modulo 4</h3>
-                  <span class="faculdade-instituicao">Estudonauta</span>
-                  <h5>Carga Hóraria: 40h </h5>
-                </li>
-              </a>
-              <a href="assets/certificados curso em video/estudonauta-javascript.png" target="_blank">
-                <li class="animate faculdade">
-                  <span class="faculdade-tipo">JavaScript</span>
-                  <h3 class="faculdade-curso">Linguagem JavaScript</h3>
-                  <span class="faculdade-instituicao">Estudonauta</span>
-                  <h5>Carga Hóraria: 40h </h5>
-                </li>
-              </a>
-              <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-fd830d42-afbd-4609-94d3-51e1d4f82b46.jpg" target="_blank">
-                <li class="animate faculdade">
-                  <span class="faculdade-tipo">Git-GitHub</span>
-                  <h3 class="faculdade-curso">do Zero ao Avançado</h3>
-                  <span class="faculdade-instituicao">Udemy</span>
-                  <h5>Carga Hóraria: 6h </h5>
-                </li>
-              </a>
+        <div class=" animate from-right empresa">
+          <span class="empresa-ano">2007-2012</span>
+          <h3 class="empresa-titulo"> Arcos Dourados - Mc Donad´s</h3>
+          <span class="empresa-titulo-cargo">Gerente de turno</span>
+          <p class="empresa-texto">
+            Profissional Responsável por garantir o resultado do Restaurante durante o seu plantão. Através de planejamento de Vendas e Ticket Médio, pesquisas de satisfação do Cliente; também por acompanhar os treinamentos previamente estabelecidos da equipe e todo o atendimento ao cliente em todos os segmentos do Restaurante; controlando o inventário a qualidade e segurança alimentar. Orientando e corrigindo procedimentos durante o seu plantão.
+          </p>
+          <ul class="empresa-habilidades">
+            <span>Competências</span>
+            <li>Treinamento de pessoas</li>
+            <li>Controle Financeiro</li>
+            <li>Controle de Estoque</li>
+            <li>Pacote Office</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-              <a href="https://on.fiap.com.br/pluginfile.php/1/local_nanocourses/certificado_nanocourse/77218/a245878ec4978b9cd9af9f2e25d0b8b1/certificado.png" target="_blank">
-                <li class="animate faculdade">
-                  <span class="faculdade-tipo">UX</span>
-                  <h3 class="faculdade-curso">User Experience</h3>
-                  <span class="faculdade-instituicao">FIAP</span>
-                  <h5>Carga Hóraria: 60h </h5>
-                </li>
-              </a>
+    <section class="formacao" id="formacao" aria-label="Formação">
+      <div class="formacao-container">
+        <h2 class="animate from-left  subtitulo">Formação</h2>
+        <div>
+          <p class=" animate from-right formacao-texto">
+            Minha recente formação foi um <strong>Tecnologo </strong>em <strong>Redes de Computadores</strong> na Faculdade <strong>UniSantanna </strong>onde me formei em julho de 2023. Atualmente estou voltado para a área Desenvolvimento Web Full Stack me desenvolvendo e especializando atráves da Escola <strong> EBAC</strong> e outras plataformas on-line.
+          </p>
+          <ul class=" animate faculdade-lista">
+            <li class="faculdade">
+              <span class="faculdade-tipo">Tecnologo</span>
+              <h3 class="faculdade-curso">Redes de Computadores</h3>
+              <p>Faculdade</p>
+              <span class="faculdade-instituicao">UniSantanna</span>
+            </li>
 
-              <a href="assets/certificados origamid/UI-origamid.png" target="_blank">
-                <li class="animate faculdade">
-                  <span class="faculdade-tipo">UI</span>
-                  <h3 class="faculdade-curso">User Interface</h3>
-                  <span class="faculdade-instituicao">Origamid</span>
-                  <h5>Carga Hóraria: 34h </h5>
-                </li>
-              </a>
+          </ul>
 
-            </ul>
-          </div>
+          <div class="animate formacao-extra">
+            <div class="cursos">
+              <h2>Cursos Intensivos</h2>
+              <ul class=" animate faculdade-lista">
+                <a href="assets/certificados curso em video/estudonauta-modulo-1.png" target="_blank">
+                  <li class=" animate faculdade">
+                    <span class="faculdade-tipo">HTML5&CSS3</span>
+                    <h3 class="faculdade-curso">Modulo 1</h3>
+                    <span class="faculdade-instituicao">Estudonauta</span>
+                    <h5>Carga Hóraria: 40h</h5>
+                  </li>
+                </a>
+                <a href="assets/certificados curso em video/estudonauta-modulo-2.png" target="_blank">
+                  <li class="animate faculdade">
+                    <span class="faculdade-tipo">HTML5&CSS3</span>
+                    <h3 class="faculdade-curso">Modulo 2</h3>
+                    <span class="faculdade-instituicao">Estudonauta</span>
+                    <h5>Carga Hóraria: 40h </h5>
+                  </li>
+                </a>
+                <a href="assets/certificados curso em video/estudonauta-modulo-3.png" target="_blank">
+                  <li class="animate faculdade">
+                    <span class="faculdade-tipo">HTML5&CSS3</span>
+                    <h3 class="faculdade-curso">Modulo 3</h3>
+                    <span class="faculdade-instituicao">Estudonauta</span>
+                    <h5>Carga Hóraria: 40h </h5>
+                  </li>
+                </a>
+                <a href="assets/certificados curso em video/estudonauta-modulo-4.png" target="_blank">
+                  <li class="animate faculdade">
+                    <span class="faculdade-tipo">HTML5&CSS3</span>
+                    <h3 class="faculdade-curso">Modulo 4</h3>
+                    <span class="faculdade-instituicao">Estudonauta</span>
+                    <h5>Carga Hóraria: 40h </h5>
+                  </li>
+                </a>
+                <a href="assets/certificados curso em video/estudonauta-javascript.png" target="_blank">
+                  <li class="animate faculdade">
+                    <span class="faculdade-tipo">JavaScript</span>
+                    <h3 class="faculdade-curso">Linguagem JavaScript</h3>
+                    <span class="faculdade-instituicao">Estudonauta</span>
+                    <h5>Carga Hóraria: 40h </h5>
+                  </li>
+                </a>
+                <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-fd830d42-afbd-4609-94d3-51e1d4f82b46.jpg" target="_blank">
+                  <li class="animate faculdade">
+                    <span class="faculdade-tipo">Git-GitHub</span>
+                    <h3 class="faculdade-curso">do Zero ao Avançado</h3>
+                    <span class="faculdade-instituicao">Udemy</span>
+                    <h5>Carga Hóraria: 6h </h5>
+                  </li>
+                </a>
 
-          <div class="idiomas">
-            <h2 class="animate">Idiomas</h2>
-            <ul class="animate">
-              <li>Inglês<span>/Beginner</span></li>
-            </ul>
+                <a href="https://on.fiap.com.br/pluginfile.php/1/local_nanocourses/certificado_nanocourse/77218/a245878ec4978b9cd9af9f2e25d0b8b1/certificado.png" target="_blank">
+                  <li class="animate faculdade">
+                    <span class="faculdade-tipo">UX</span>
+                    <h3 class="faculdade-curso">User Experience</h3>
+                    <span class="faculdade-instituicao">FIAP</span>
+                    <h5>Carga Hóraria: 60h </h5>
+                  </li>
+                </a>
+
+                <a href="assets/certificados origamid/UI-origamid.png" target="_blank">
+                  <li class="animate faculdade">
+                    <span class="faculdade-tipo">UI</span>
+                    <h3 class="faculdade-curso">User Interface</h3>
+                    <span class="faculdade-instituicao">Origamid</span>
+                    <h5>Carga Hóraria: 34h </h5>
+                  </li>
+                </a>
+              </ul>
+            </div>
+            <div class="idiomas">
+              <h2 class="animate">Idiomas</h2>
+              <ul class="animate">
+                <li>Inglês<span>/Beginner</span></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="portifolio" id="portifolio" aria-label="portifolio">
-        <div class="portifolio-container">
-          
-            <h2 class="subtitulo">Portifólio</h2>
-            <div>
-              <h2>Projeto</h2>
-              <h3>Android</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dolores eaque nobis quis quae, perferendis dignissimos aperiam harum odit hic sequi delectus. Laudantium dolorum delectus accusantium, sapiente labore eius iusto!</p>
-              
-              <div class="portifolio-descricao">
-                <div class="portifolio-img">
-                 <img src="img/projetos/projeto-android.jpg" alt="Foto do projeto Android">
-                </div>
-                <div class="tec">
-                  <h2>Tecnologias</h2>
-                  <div class="portifolio-tecnologias">
-                    <img src="img/tecnologias/icon-html5.svg" alt="">
-                    <img src="img/tecnologias/icon-css3.svg" alt="">
-                   
-                  </div>
-                  <button type="button">github</button>
-                  <button type="button">Deploy</button>
-                </div>
-              </div>
-            </div>
-
-          
-
-        
-
-
-
-    </div>
-  </section>
-
-
-
-  <footer class="footer" id="contato">
-    <div class="footer-container">
-      <p class=" animate from-left footer-texto"> Estou disponivel para novo projetos no momento. Entre em contato comigo para marcarmos uma conversa.🖖</p>
-
-      <ul class=" animate from-right footer-contato">
-        <li>emmanuelmarcosdeoliveira@gmail.com</li>
-
-
-        <div class="redes">
-          <a href="https://www.linkedin.com/in/-emmanuel-oliveira" target="_blank" rel="external"><img src="img/redes-sociais/icon-linkedim.svg" alt="Perfin no Lnkedim"></a>
-          <a href="https://wa.me/5511968336094" target="_blank"><img src="img/redes-sociais/icon-whatsapp.svg" alt="Telefone para contato whathsapp"></a>
-          <!-- <a href="https://instagram.com/desenvolvedor.oliveira?igshid=MzNlNGNkZWQ4Mg==" target="_blank" rel="external"><img src="img/insta.svg" alt="Meu Perfin no insta"></a> -->
+    </section>
+    <!-- <section class="portifolio" id="portifolio" aria-label="portifolio">
+      <div class="portifolio-container">
+        <h2 class="animate from-left subtitulo">Portifólio</h2>
+        <div class="">
+          <h2>Projeto</h2>
+          <h3>Android</h3>
+          <p class="animate from-right">Este projeto contando um pouco da história do masacote Android, aonde temos links que direcionam para as páginas de Dan Morril que fez a primeira versão do mascote e também para a página de Irina Block, a ilutradora do mascote. Nessa página, também temos a descrição dos nomes das versões do Android desde a sua versão inicial que é a v1.5.</p>
+          <div class=" animate  portifolio-img">
+            <img src="img/projetos/projeto-android.jpg" alt="Foto do projeto Android">
+          </div>
         </div>
+        <div class="tec">
+          <h2 class="animate from-right">Tecnologias</h2>
+          <div class="animate from-right portifolio-tecnologias">
+            <img src="img/tecnologias/icon-html5.svg" alt="">
+            <img src="img/tecnologias/icon-css3.svg" alt="">
+          </div class="animate from-right">
+          <a href="https://github.com/emmanuelmarcosdeoliveira/projeto-android"><button type="button">github</button></a>
+          <a href="https://projetos-educacionais-ot3b.vercel.app/"><button type="button">Deploy</button></a>
+        </div>
+      </div>
+  </div>
+  </section> -->
+    <section id="tecnologias" class="tecnologias">
+      <div class="tecnologias-icones">
+
+        <i class="fa-brands fa-html5 fa-beat" style="color: #e0e0e0;"></i>
+        <i class="fa-brands fa-square-js fa-beat" style="color: #e0e0e0;"></i>
+        <i class="fa-brands fa-css3-alt fa-beat" style="color: #e0e0e0;"></i>
+        <i class="fa-brands fa-bootstrap fa-beat" style="color: #e0e0e0;"></i>
+        <i class="fa-brands fa-sass fa-beat" style="color: #e0e0e0;"></i>
+        <i class="fa-brands fa-gulp fa-beat" style="color: #e0e0e0;"></i>
+      </div>
+    </section>
+
+    <footer class="footer" id="contato">
+      <div class="footer-container">
+        <p class=" animate from-left footer-texto"> Estou disponivel para novo projetos no momento. Entre em contato comigo para marcarmos uma conversa.🖖</p>
+
+        <ul class=" animate from-right footer-contato">
+          <li>emmanuelmarcosdeoliveira@gmail.com</li>
+
+
+          <div class="redes">
+            <a href="https://www.linkedin.com/in/-emmanuel-oliveira" target="_blank" rel="external"><img src="img/redes-sociais/icon-linkedim.svg" alt="Perfin no Lnkedim"></a>
+            <a href="https://wa.me/5511968336094" target="_blank"><img src="img/redes-sociais/icon-whatsapp.svg" alt="Telefone para contato whathsapp"></a>
+            <!-- <a href="https://instagram.com/desenvolvedor.oliveira?igshid=MzNlNGNkZWQ4Mg==" target="_blank" rel="external"><img src="img/insta.svg" alt="Meu Perfin no insta"></a> -->
+          </div>
 
 
 
 
 
-      </ul>
-      <p class="animate from-left footer-copy"> 2023 - &copy;Alguns direitos reservados.</p>
-    </div>
+
+        </ul>
+        <p class="animate from-left footer-copy"> 2023 - &copy;Alguns direitos reservados.</p>
+      </div>
 
 
 
-    <script src="js/script.js"></script>
-    <script src="js/intersection.js"></script>
+      <script src="js/script.js"></script>
+      <script src="js/intersection.js"></script>
+
 </body>
 
 </html>

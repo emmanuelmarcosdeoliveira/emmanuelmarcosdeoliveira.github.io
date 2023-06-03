@@ -54,12 +54,7 @@
   padding-right: 20px;
   background-color: #000000;
   cursor: pointer;
-  
- }
- .redes a:hover {
-  color: #000000;
-   }
-
+}
 
 @media (max-width: 800px) {
   .footer-container {

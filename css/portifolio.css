@@ -3,45 +3,52 @@
   padding: 120px 20px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 100px;
-  }
-.portifolio .subtitulo  {
+  grid-template-columns:1fr 2fr 1fr;
+  gap: 10px;
+}
+.portifolio .subtitulo {
   color: #e0e0e0;
   max-width: 5ch;
 }
 .portifolio-tecnologias {
   display: flex;
-  }
-  .portifolio-container h3 {
-    text-align: center;
-    margin-bottom: 20px;
-    }
-  .portifolio-tecnologias img {
+}
+.portifolio-container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.portifolio-tecnologias img {
   max-width: 42px;
-  padding: 05px;
-  }
-  .portifolio-descricao{
-   display: flex;
-    }
-    
-   .portifloio-descricao h2 {
-    padding: 20px;
-   }
-  
-   .tec h2 {
-    margin-top: 100px;
-    text-align: center;
-   }
-   .portifolio-tecnologias{
-   margin-left: 0px;
-   }
-   .portifolio-img img {
-   
-    padding:20px 20px 20px 0px;
-   }
-    
-   .portifolio-container button {
-    font-size: .7rem;
-    padding: 5px 10px;
-   }
+  padding: 10px;
+}
+.portifolio-descricao {
+  display: flex;
+}
+
+.portifloio-descricao h2 {
+  padding: 20px;
+}
+
+.tec h2 {
+  margin-top: 100px;
+  text-align: center;
+}
+.portifolio-tecnologias {
+  margin-left: 0px;
+}
+.portifolio-img img {
+  padding: 20px 20px 20px 0px;
+}
+.porti {
+  display: flex;
+  border: 2px solid black;
+  border-radius: 5px;
+} 
+
+
+
+.portifolio-container button {
+  font-size: 0.7rem;
+  padding: 5px 10px;
+}
+
