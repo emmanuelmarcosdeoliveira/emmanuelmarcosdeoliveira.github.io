@@ -12,6 +12,7 @@
 }
 .portifolio-tecnologias {
   display: flex;
+<<<<<<< HEAD
 }
 .portifolio-container h3 {
   text-align: center;
@@ -52,3 +53,37 @@
   padding: 5px 10px;
 }
 
+=======
+  }
+  .portifolio-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    }
+  .portifolio-tecnologias img {
+  width: 32px;
+  }
+  .portifolio-descricao{
+   display: flex;
+    }
+    
+   .portifloio-descricao h2 {
+    padding: 20px;
+   }
+  
+   .tec h2 {
+    margin-top: 100px;
+    text-align: center;
+   }
+   .portifolio-tecnologias{
+   margin-left: 0px;
+   }
+   .portifolio-img img {
+   justify-content: flex-start;
+    padding:20px 20px 20px 0px;
+   }
+    
+   .portifolio-container button {
+    font-size: .7rem;
+    padding: 5px 10px;
+   }
+>>>>>>> parent of 53b9c38 (:construction: Ateração de foto Perfil)
