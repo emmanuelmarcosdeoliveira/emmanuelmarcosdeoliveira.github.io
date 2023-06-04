@@ -9,3 +9,13 @@ function typeWriter(elemento) {
 const titulo = document.querySelector("h1");
 typeWriter(titulo);
 
+
+  var btn = document.getElementById("btn-top");
+  btn.addEventListener("click",function(){
+    window.scrollTo({
+      top:0,
+      left: 0,
+       behavior:"smooth"
+
+  });
+});

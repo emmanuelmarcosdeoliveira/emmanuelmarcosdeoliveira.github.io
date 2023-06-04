@@ -54,12 +54,19 @@
   padding-right: 20px;
   background-color: #000000;
   cursor: pointer;
-  
- }
- .redes a:hover {
+}
+.redes a:hover {
   color: #000000;
-   }
+}
 
+#btn-top {
+  display: flex;
+  justify-content: end;
+}
+#btn-top img {
+  border-radius: 50%;
+  color: #000000;
+}
 
 @media (max-width: 800px) {
   .footer-container {
@@ -99,6 +106,6 @@
     width: 40px;
     background-color: #1f1f1fc9;
     border-radius: 5px;
-    border: 2px solid #8f8f8f;
+    border: 1px solid #8f8f8f;
   }
 }
