@@ -1,7 +1,7 @@
-/* .animate {
+.animate {
   opacity: 0;
   filter: blur(2px);
-  transition: 1s;
+  transition: 1.3s;
 }
 
 .animate.from-top {
@@ -12,7 +12,7 @@
 }
 .animate.from-right {
   transform: translateX(100%);
-} */
+}
 .animate.show {
   transform: translate(0);
   filter: blur(0);

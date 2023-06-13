@@ -50,10 +50,15 @@
 .redes {
   display: flex;
 }
-.redes img {
+.redes  li {
+  margin-bottom: 180px;
+}
+.redes  img {
+  padding-top: 40px;
   padding-right: 20px;
   background-color: #000000;
   cursor: pointer;
+  
 }
 .redes a:hover {
   color: #000000;
